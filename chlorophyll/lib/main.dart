@@ -26,6 +26,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
+      darkTheme: ThemeData(
+          brightness: Brightness.dark,
+          primarySwatch: Colors.green, // TODO: no effect
+          primaryColor: Colors.green,
+          appBarTheme: const AppBarTheme(backgroundColor: Colors.green)),
+      // themeMode: ThemeMode.system, // set to system by default
       home: const Home(),
     );
   }
